@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Aug 25 08:31:16 2025 as: nmap -sV -sC -p 80,443 -oA apache_scan 192.168.56.101 -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -p 80,443 -oA apache_scan 192.168.56.101" start="1756110676" startstr="Mon Aug 25 08:31:16 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1756110677" endtime="1756110684"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service><script id="http-title" output="Metasploitable2 - Linux"><elem key="title">Metasploitable2 - Linux</elem>
+</script><script id="http-server-header" output="Apache/2.2.8 (Ubuntu) DAV/2"><elem>Apache/2.2.8 (Ubuntu) DAV/2</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="1025" rttvar="3055" to="100000"/>
+</host>
+<runstats><finished time="1756110684" timestr="Mon Aug 25 08:31:24 2025" summary="Nmap done at Mon Aug 25 08:31:24 2025; 1 IP address (1 host up) scanned in 8.55 seconds" elapsed="8.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

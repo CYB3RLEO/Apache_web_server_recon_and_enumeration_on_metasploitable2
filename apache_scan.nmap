@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Mon Aug 25 08:31:16 2025 as: nmap -sV -sC -p 80,443 -oA apache_scan 192.168.56.101
+Nmap scan report for 192.168.56.101
+Host is up (0.0010s latency).
+
+PORT    STATE  SERVICE VERSION
+80/tcp  open   http    Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+|_http-title: Metasploitable2 - Linux
+|_http-server-header: Apache/2.2.8 (Ubuntu) DAV/2
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 25 08:31:24 2025 -- 1 IP address (1 host up) scanned in 8.55 seconds
